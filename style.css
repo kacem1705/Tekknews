@@ -1,0 +1,89 @@
+/* General Body Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+    overflow-x: hidden;
+  }
+  
+  /* Container */
+  .container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  /* Header */
+  header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px 100%;
+    min-height: 70px;
+    border-bottom: #fff 3px solid;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+  }
+  
+  header h1 {
+    text-align: center;
+    margin: 0;
+  }
+  
+  /* Main Content Styles */
+  .main-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .main-section {
+    flex: 3;
+    margin: 20px;
+    padding: 20px;
+    background: #f4f4f4;
+  }
+  
+  .sidebar {
+    flex: 1;
+    margin: 20px;
+    padding: 20px;
+    background: #f4f4f4;
+    overflow-y: auto; /* Adds vertical scrolling if needed */
+    overflow-x: hidden;
+  }
+  
+  /* Footer */
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .main-content {
+      flex-direction: column;
+    }
+    .sidebar {
+        flex: 100%;
+        max-width: 100%;
+      }
+      footer {
+        position: relative; /* This ensures the footer is at the bottom of the content */
+        bottom: auto;
+      }
+  }
+  
+
+
+
+
+
+
+
+
+
